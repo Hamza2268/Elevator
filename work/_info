@@ -1,0 +1,52 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Eelevator
+Z0 w1761525040
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z3 dD:/work/Elavator
+Z4 8D:/work/Elavator/elevator_ctrl.vhd
+Z5 FD:/work/Elavator/elevator_ctrl.vhd
+l0
+L5 1
+V08Uld_gU1dFF6^g_Hf:2>1
+!s100 ;?9hz<n_Ti@cKnJ[YC?Uh0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1761525043
+!i10b 1
+Z8 !s108 1761525043.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/work/Elavator/elevator_ctrl.vhd|
+Z10 !s107 D:/work/Elavator/elevator_ctrl.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R1
+R2
+Z13 DEx4 work 8 elevator 0 22 08Uld_gU1dFF6^g_Hf:2>1
+!i122 11
+l27
+L14 77
+V]HV[Ml_oJ66PifcD4Q2Y@0
+!s100 _mzf^EX:Ob=Dml<[E_S>V2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

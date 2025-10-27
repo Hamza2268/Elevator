@@ -1,0 +1,45 @@
+# Load canceled
+# Compile of elevator_ctrl.vhd failed with 6 errors.
+# Compile of elevator_ctrl.vhd failed with 3 errors.
+# Compile of elevator_ctrl.vhd was successful.
+vsim -gui work.elevator
+# vsim -gui work.elevator 
+# Start time: 02:48:34 on Oct 27,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.elevator(arch)
+add wave  \
+sim:/elevator/clk \
+sim:/elevator/rst \
+sim:/elevator/clk_en
+force -freeze sim:/elevator/clk 1 0, 0 {50 ps} -r 100
+run
+# Compile of elevator_ctrl.vhd was successful.
+run
+quit -sim
+# End time: 02:51:27 on Oct 27,2025, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 8
+vsim -gui work.elevator
+# vsim -gui work.elevator 
+# Start time: 02:51:34 on Oct 27,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.elevator(arch)
+add wave  \
+sim:/elevator/clk \
+sim:/elevator/clk_en
+force -freeze sim:/elevator/clk 1 0, 0 {50 ps} -r 100
+run
+quit -sim
+# End time: 03:26:19 on Oct 27,2025, Elapsed time: 0:34:45
+# Errors: 0, Warnings: 1
+# Compile of elevator_ctrl.vhd failed with 2 errors.
+# Compile of elevator_ctrl.vhd failed with 1 errors.
+# Compile of elevator_ctrl.vhd failed with 3 errors.
+# Compile of elevator_ctrl.vhd failed with 1 errors.
+# Compile of elevator_ctrl.vhd failed with 1 errors.
+# Compile of elevator_ctrl.vhd failed with 2 errors.
+# Compile of elevator_ctrl.vhd failed with 1 errors.
+# Compile of elevator_ctrl.vhd was successful.
