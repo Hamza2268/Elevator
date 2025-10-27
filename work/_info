@@ -10,43 +10,129 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Eelevator
-Z0 w1761525040
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 11
-Z3 dD:/work/Elavator
-Z4 8D:/work/Elavator/elevator_ctrl.vhd
-Z5 FD:/work/Elavator/elevator_ctrl.vhd
+Z0 w1761603356
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 28
+Z4 dE:/Cmp28_2ndYear/A_VHDL/Elevator
+Z5 8E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd
+Z6 FE:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd
 l0
-L5 1
-V08Uld_gU1dFF6^g_Hf:2>1
-!s100 ;?9hz<n_Ti@cKnJ[YC?Uh0
-Z6 OV;C;2020.1;71
+L6 1
+V<DPogiz?=:DTFUWJFnj_J1
+!s100 NgPeZGQZoOc0^1bG1i4MJ2
+Z7 OV;C;2020.1;71
 32
-Z7 !s110 1761525043
+Z8 !s110 1761603361
 !i10b 1
-Z8 !s108 1761525043.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/work/Elavator/elevator_ctrl.vhd|
-Z10 !s107 D:/work/Elavator/elevator_ctrl.vhd|
+Z9 !s108 1761603361.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd|
+Z11 !s107 E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd|
 !i113 1
-Z11 o-work work -2002 -explicit
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
 Aarch
 R1
 R2
-Z13 DEx4 work 8 elevator 0 22 08Uld_gU1dFF6^g_Hf:2>1
-!i122 11
-l27
-L14 77
-V]HV[Ml_oJ66PifcD4Q2Y@0
-!s100 _mzf^EX:Ob=Dml<[E_S>V2
-R6
-32
+R3
+Z14 DEx4 work 8 elevator 0 22 <DPogiz?=:DTFUWJFnj_J1
+!i122 28
+l44
+Z15 L15 130
+Z16 VMhoXZMYhMPdDo4zF4jm0L3
+Z17 !s100 iAYW9ZX12>MKBfMkk;z_o1
 R7
-!i10b 1
+32
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
+Eresolver
+Z18 w1761599846
+R1
+R2
+R3
+!i122 14
+R4
+Z19 8E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd
+Z20 FE:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd
+l0
+L5 1
+VB`3OULo8P]@4;inVjn[G@2
+!s100 Iz3F6IJHP?nj`dTG]m2Z00
+R7
+32
+Z21 !s110 1761599850
+!i10b 1
+Z22 !s108 1761599850.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd|
+Z24 !s107 E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 8 resolver 0 22 B`3OULo8P]@4;inVjn[G@2
+!i122 14
+l18
+L14 46
+VIP?3TABd>WKbk0FzTH_nd3
+!s100 C_NHRV6:2i78ee2n42k2Y1
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
+Essd
+Z25 w1761601903
+R2
+R3
+!i122 24
+R4
+Z26 8E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
+Z27 FE:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
+l0
+L4 1
+VYb0n<@NZNI?hONI<_OM7_1
+!s100 cBCl9k9[<1KCnd5^AVze[0
+R7
+32
+Z28 !s110 1761601910
+!i10b 1
+Z29 !s108 1761601910.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
+Z31 !s107 E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 3 ssd 0 22 Yb0n<@NZNI?hONI<_OM7_1
+!i122 24
+l12
+L11 19
+Vc?EbR9UmIm3m[WfAV;1kA0
+!s100 Lm7P]eblJ@=QFKKHnz;oi2
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R12
+R13

@@ -5,7 +5,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY Elevator IS
     PORT (
-        clk, rst : IN STD_LOGIC;
+        clk, rst, push : IN STD_LOGIC;
         bn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
         mv_up, mv_dn, door_open : OUT STD_LOGIC;
         floor : OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
@@ -21,7 +21,7 @@ ARCHITECTURE arch OF Elevator IS
             CurrentFloor : IN INTEGER;
             Request : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
             Direction : IN STD_LOGIC;
-            TargetFloor : OUT INTEGER;
+            TargetFloor : OUT INTEGER
         );
     END COMPONENT;
 
@@ -33,7 +33,7 @@ ARCHITECTURE arch OF Elevator IS
 
     TYPE state IS (idle, moving_up, moving_down, door_op, door_close);
     SIGNAL state_reg, state_next : state;
-    SIGNAL timer : INTEGER := 0;
+    SIGNAL timer, door_timer : INTEGER := 0;
 
     -- SIGNAL up, dn, rdy : STD_LOGIC;
 
@@ -42,9 +42,7 @@ ARCHITECTURE arch OF Elevator IS
     SIGNAL DIRECTION : STD_LOGIC;
 
 BEGIN
-
-    -- PORT MAP (REQUIRED)
-    P : RESOLVER PORT MAP(CurrentFloor, REQUIRED, DIRECTION, Request)
+    P : RESOLVER PORT MAP(CurrentFloor, Request, DIRECTION, REQUIRED);
 
     PROCESS (clk, rst)
     BEGIN
@@ -61,12 +59,19 @@ BEGIN
         END IF;
     END PROCESS;
 
+    PROCESS (push)
+    BEGIN
+        IF rising_edge(push) THEN
+            request(to_integer(unsigned(bn))) <= '1';
+        END IF;
+    END PROCESS;
+
     PROCESS (clk_en, rst)
     BEGIN
         IF (rst = '1') THEN
             state_reg <= idle;
-            CurrentFloor <= 0;
-            REQUIRED <= 0;
+            -- CurrentFloor <= 0;
+            -- REQUIRED <= 0;
             Request <= (OTHERS => '0');
         ELSIF rising_edge(clk_en) THEN
             state_reg <= state_next;
@@ -79,39 +84,61 @@ BEGIN
             WHEN idle =>
                 IF (REQUIRED > CurrentFloor) THEN
                     state_next <= moving_up;
-                    Request <= '1';
-                ELSIF (REQUIRED < CurrentFloor)
+                    direction <= '1';
+                ELSIF (REQUIRED < CurrentFloor) THEN
                     state_next <= moving_down;
-                    Request <= '0';
+                    direction <= '0';
                 ELSE
                     state_next <= idle;
                 END IF;
                 -- ##########################################
             WHEN moving_up =>
-                CurrentFloor = CurrentFloor + 1;
-                IF (CurrentFloor = REQUIRTED) THEN
-                    state_next <= door_op;
+                IF (door_timer = delay) THEN
+                    CurrentFloor <= CurrentFloor + 1;
+                    IF (CurrentFloor + 1 = REQUIRED) THEN
+                        state_next <= door_op;
+                    ELSE
+                        state_next <= moving_up;
+                    END IF;
+                    door_timer <= 0;
                 ELSE
-                    state_next <= moving_up;
+                    door_timer <= door_timer + 1;
                 END IF;
             WHEN moving_down =>
-                CurrentFloor = CurrentFloor - 1;
-                IF (CurrentFloor = REQUIRTED) THEN
-                    state_next <= door_op;
+                IF (door_timer = delay) THEN
+                    CurrentFloor <= CurrentFloor - 1;
+                    IF (CurrentFloor - 1 = REQUIRED) THEN
+                        state_next <= door_op;
+                    ELSE
+                        state_next <= moving_down;
+                    END IF;
+                    door_timer <= 0;
                 ELSE
-                    state_next <= moving_down;
+                    door_timer <= door_timer + 1;
                 END IF;
                 -- ##########################################
             WHEN door_op =>
-                IF (timer = DELAY - 1) THEN -- DELAY - 1
-                    state_next <= door_op;
-                    timer <= timer - 1;
-                ELSE
+                IF (timer = delay) THEN
                     state_next <= door_close;
+                    timer <= 0;
+                ELSE
+                    state_next <= door_op;
+                    timer <= timer + 1;
                 END IF;
+
             WHEN door_close =>
                 state_next <= idle;
+
         END CASE;
     END PROCESS;
 
+    mv_up <= '1' WHEN state_reg = moving_up ELSE
+        '0';
+    mv_dn <= '1' WHEN state_reg = moving_down ELSE
+        '0';
+    door_open <= '1' WHEN state_reg = door_op ELSE
+        '0';
+
+    floor <= STD_LOGIC_VECTOR(to_unsigned(CurrentFloor, 4));
+    -- ssd port map(floor,quartsconnections);
 END arch;
