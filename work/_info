@@ -10,11 +10,11 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 Eelevator
-Z0 w1761603356
+Z0 w1761621237
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 28
+!i122 86
 Z4 dE:/Cmp28_2ndYear/A_VHDL/Elevator
 Z5 8E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd
 Z6 FE:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd
@@ -24,9 +24,9 @@ V<DPogiz?=:DTFUWJFnj_J1
 !s100 NgPeZGQZoOc0^1bG1i4MJ2
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1761603361
+Z8 !s110 1761621276
 !i10b 1
-Z9 !s108 1761603361.000000
+Z9 !s108 1761621276.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd|
 Z11 !s107 E:\Cmp28_2ndYear\A_VHDL\Elevator\elevator_ctrl.vhd|
 !i113 1
@@ -36,12 +36,12 @@ Aarch
 R1
 R2
 R3
-Z14 DEx4 work 8 elevator 0 22 <DPogiz?=:DTFUWJFnj_J1
-!i122 28
+DEx4 work 8 elevator 0 22 <DPogiz?=:DTFUWJFnj_J1
+!i122 86
 l44
-Z15 L15 130
-Z16 VMhoXZMYhMPdDo4zF4jm0L3
-Z17 !s100 iAYW9ZX12>MKBfMkk;z_o1
+L15 131
+VWn]MG0LFA9;go:eYA=Fij1
+!s100 a@D8Q=e;7oc35@<QL=L4Q1
 R7
 32
 R8
@@ -52,26 +52,69 @@ R11
 !i113 1
 R12
 R13
-Eresolver
-Z18 w1761599846
+Eelevator_ctrl
+Z14 w1761742554
 R1
 R2
 R3
-!i122 14
+!i122 87
+Z15 dE:/Cmp28_2ndYear/A_VHDL/Elevator2
+Z16 8E:\Cmp28_2ndYear\A_VHDL\elevator\elevator_ctrl.vhd
+Z17 FE:\Cmp28_2ndYear\A_VHDL\elevator\elevator_ctrl.vhd
+l0
+L6 1
+VV=7?j;d32cC:OT@F<PJ6D3
+!s100 ;F39o6`d;5cZ7gSX92]IH3
+R7
+32
+Z18 !s110 1761742556
+!i10b 1
+Z19 !s108 1761742556.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Cmp28_2ndYear\A_VHDL\elevator\elevator_ctrl.vhd|
+!s107 E:\Cmp28_2ndYear\A_VHDL\elevator\elevator_ctrl.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 13 elevator_ctrl 0 22 V=7?j;d32cC:OT@F<PJ6D3
+!i122 87
+l53
+L15 136
+VK3JALT^j8IP2?EdKmK1JK3
+!s100 XXgiaHR`6jLjAg5b5<Ed:2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z21 !s107 E:\Cmp28_2ndYear\A_VHDL\elevator\elevator_ctrl.vhd|
+!i113 1
+R12
+R13
+Eresolver
+Z22 w1761620082
+R1
+R2
+R3
+!i122 84
 R4
-Z19 8E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd
-Z20 FE:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd
+Z23 8E:\Cmp28_2ndYear\A_VHDL\Elevator\Resolver.vhd
+Z24 FE:\Cmp28_2ndYear\A_VHDL\Elevator\Resolver.vhd
 l0
 L5 1
 VB`3OULo8P]@4;inVjn[G@2
 !s100 Iz3F6IJHP?nj`dTG]m2Z00
 R7
 32
-Z21 !s110 1761599850
+Z25 !s110 1761620198
 !i10b 1
-Z22 !s108 1761599850.000000
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd|
-Z24 !s107 E:/Cmp28_2ndYear/A_VHDL/Elevator/Resolver.vhd|
+Z26 !s108 1761620198.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Cmp28_2ndYear\A_VHDL\Elevator\Resolver.vhd|
+Z28 !s107 E:\Cmp28_2ndYear\A_VHDL\Elevator\Resolver.vhd|
 !i113 1
 R12
 R13
@@ -80,40 +123,40 @@ R1
 R2
 R3
 DEx4 work 8 resolver 0 22 B`3OULo8P]@4;inVjn[G@2
-!i122 14
-l18
-L14 46
-VIP?3TABd>WKbk0FzTH_nd3
-!s100 C_NHRV6:2i78ee2n42k2Y1
+!i122 84
+l16
+L14 43
+V@n?@PcEMJd<@@[<N;6Wd;1
+!s100 gV`EQBA=SBmH0i5h>l^:P3
 R7
 32
-R21
+R25
 !i10b 1
-R22
-R23
-R24
+R26
+R27
+R28
 !i113 1
 R12
 R13
 Essd
-Z25 w1761601903
+Z29 w1761601903
 R2
 R3
 !i122 24
 R4
-Z26 8E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
-Z27 FE:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
+Z30 8E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
+Z31 FE:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd
 l0
 L4 1
 VYb0n<@NZNI?hONI<_OM7_1
 !s100 cBCl9k9[<1KCnd5^AVze[0
 R7
 32
-Z28 !s110 1761601910
+Z32 !s110 1761601910
 !i10b 1
-Z29 !s108 1761601910.000000
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
-Z31 !s107 E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
+Z33 !s108 1761601910.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
+Z35 !s107 E:/Cmp28_2ndYear/A_VHDL/Elevator/ssd.vhd|
 !i113 1
 R12
 R13
@@ -128,11 +171,11 @@ Vc?EbR9UmIm3m[WfAV;1kA0
 !s100 Lm7P]eblJ@=QFKKHnz;oi2
 R7
 32
-R28
+R32
 !i10b 1
-R29
-R30
-R31
+R33
+R34
+R35
 !i113 1
 R12
 R13
