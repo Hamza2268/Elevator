@@ -9,11 +9,7 @@
 
 ## State Machine
 
-![State Diagram](./ElevatorStateDiagram.png)
-
-> 📄 [View full PDF](./ElevatorStateDiagram.pdf)
-
----
+## ![State Diagram](./ElevatorStateDiagram.png)
 
 ## Table of Contents
 
