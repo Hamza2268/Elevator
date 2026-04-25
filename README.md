@@ -6,20 +6,12 @@
 ![FPGA](https://img.shields.io/badge/Board-DE1--SoC-orange?style=flat-square)
 ![Device](https://img.shields.io/badge/Device-Cyclone%20V%205CSEMA5F31C6-green?style=flat-square)
 ![Tool](https://img.shields.io/badge/Tool-Quartus%20Prime-red?style=flat-square)
-<<<<<<< HEAD
-![Tool](https://img.shields.io/badge/Tool-Quartus%20Prime-red?style=flat-square)
-
-### State Machine
-
-![State Diagram](ElevatorStateDiagram.png)
-=======
 
 ## State Machine
 
 ![State Diagram](./ElevatorStateDiagram.png)
 
 > 📄 [View full PDF](./ElevatorStateDiagram.pdf)
->>>>>>> 88531aec98a8e5471116b0d124c31cc3eabe4f3b
 
 [📄 View full PDF](./ElavatorStateDiagram.pdf)
 
