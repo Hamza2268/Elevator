@@ -6,7 +6,7 @@
 ![FPGA](https://img.shields.io/badge/Board-DE1--SoC-orange?style=flat-square)
 ![Device](https://img.shields.io/badge/Device-Cyclone%20V%205CSEMA5F31C6-green?style=flat-square)
 ![Tool](https://img.shields.io/badge/Tool-Quartus%20Prime-red?style=flat-square)
-![State Diagram](docs/state_diagram.png)
+![State Diagram](ElevatorStateDiagram.png)
 
 ---
 
