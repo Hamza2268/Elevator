@@ -13,8 +13,6 @@
 
 > 📄 [View full PDF](./ElevatorStateDiagram.pdf)
 
-[📄 View full PDF](./ElavatorStateDiagram.pdf)
-
 ---
 
 ## Table of Contents
