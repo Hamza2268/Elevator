@@ -319,4 +319,3 @@ Key pin assignments from the `.qsf` file:
 
 ---
 
-*Cairo University · Faculty of Engineering · Computer Engineering Department*
